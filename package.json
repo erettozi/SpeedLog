@@ -1,0 +1,18 @@
+{
+  "name": "speedlog",
+  "version": "1.0.0",
+  "description": "A Power and Speed async logging library",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "gypfile": true,
+  "author": {
+    "name": "Erick Rettozi",
+    "email": "erettozi@gmail.com"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">= 6.3.1"
+  },
+  "main":"./build/Release/speedlog.node"
+}
