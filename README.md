@@ -231,7 +231,7 @@ Transports handles
 
 ``` js
   "dependencies" : {
-      "SpeedLog" : "git+http://user:pass@git.domain.com.br:app/SpeedLog.git#master",
+      "SpeedLog" : "git+https://github.com/erettozi/SpeedLog.git#master"
   }
 ```
  Run the command to install: **sudo npm install SpeedLog**
