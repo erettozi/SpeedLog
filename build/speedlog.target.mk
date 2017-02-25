@@ -33,10 +33,10 @@ CFLAGS_CC_Debug := \
 	-std=gnu++0x
 
 INCS_Debug := \
-	-I/home/erettozi/.node-gyp/6.3.1/include/node \
-	-I/home/erettozi/.node-gyp/6.3.1/src \
-	-I/home/erettozi/.node-gyp/6.3.1/deps/uv/include \
-	-I/home/erettozi/.node-gyp/6.3.1/deps/v8/include
+	-I/home/erettozi/.node-gyp/6.10.0/include/node \
+	-I/home/erettozi/.node-gyp/6.10.0/src \
+	-I/home/erettozi/.node-gyp/6.10.0/deps/uv/include \
+	-I/home/erettozi/.node-gyp/6.10.0/deps/v8/include
 
 DEFS_Release := \
 	'-DNODE_GYP_MODULE_NAME=speedlog' \
@@ -67,10 +67,10 @@ CFLAGS_CC_Release := \
 	-std=gnu++0x
 
 INCS_Release := \
-	-I/home/erettozi/.node-gyp/6.3.1/include/node \
-	-I/home/erettozi/.node-gyp/6.3.1/src \
-	-I/home/erettozi/.node-gyp/6.3.1/deps/uv/include \
-	-I/home/erettozi/.node-gyp/6.3.1/deps/v8/include
+	-I/home/erettozi/.node-gyp/6.10.0/include/node \
+	-I/home/erettozi/.node-gyp/6.10.0/src \
+	-I/home/erettozi/.node-gyp/6.10.0/deps/uv/include \
+	-I/home/erettozi/.node-gyp/6.10.0/deps/v8/include
 
 OBJS := \
 	$(obj).target/$(TARGET)/main.o \

@@ -106,7 +106,7 @@ Logger::Logger(Local<Object> objectArgs,Isolate* isolate) {
 	// Se não, configuro somente um file (Local<Object>File)
 	else
 	if(fileElem->IsObject()) {
-        	Local<Object> File = Local<Object>::Cast(Transports->Get(String::NewFromUtf8(isolate,"Console")));
+        	Local<Object> File = Local<Object>::Cast(Transports->Get(String::NewFromUtf8(isolate,"File")));
 		configureFileTransport(File,isolate);
 	}
 }
@@ -983,7 +983,7 @@ char* Logger::getCSVLogLine(const FunctionCallbackInfo<Value>& args, char* logTy
 	char* stringInfo = prepareCSVLine(args,idx);
 
         // Pego os valores das variáveis que foram passadas por parâmetro
-        char* newStringInfo = getVars(args,0,stringInfo,idx);
+        char* newStringInfo = getVars(args,1,stringInfo,idx);
 
         // Monto a linha do log
         char* logCSVLine = createCSVLine(logType,*appName,newStringInfo,textColorize);

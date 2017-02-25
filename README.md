@@ -74,11 +74,11 @@ Transports handles
   var login = 'login_test';
   var domain = 'domaintest.com.br';
 
-  log.info('YourMethodName',code,name,email,{dataInfo:'info message'});
+  log.info('YourMethodName',code,login,domain,{dataInfo:'info message'});
 
-  log.error('YourMethodName',code,name,email);
+  log.error('YourMethodName',code,login,domain);
 
-  log.warn('YourMethodName',code,name,email);
+  log.warn('YourMethodName',code,login,domain);
 
   log.destroy();
 ``` 
@@ -168,9 +168,20 @@ Transports handles
 				colorize: true // (info, error, warn)
 			}
 		],
-		Console: {
-			colorize: true // (info, error, warn)
-		}
+		Console: [
+				{
+					level: 'info',
+					colorize: true
+				},
+				{
+					level: 'error',
+					colorize: true
+				},
+				{
+					level: 'warn',
+					colorize: true
+				}
+			]
 	}
   });
 
@@ -207,7 +218,7 @@ Transports handles
 
   log.info('YourMethodName',logLine);
 
-  log.error('YourMethodName','ERROR[%j]',logLine);
+  log.error('YourMethodName',logLine);
 
   log.warn('YourMethodName','WARNING - code[%s] - email[%s] - name[%s] - userData[%j]',logLine.code,logLine.email,logLine.name,userData);
 
